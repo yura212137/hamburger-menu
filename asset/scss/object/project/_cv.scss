@@ -1,0 +1,23 @@
+@use "./../../foundation/variable" as v;
+
+.p-cv {
+    &__content {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .c-button {
+        display: block;
+        margin: 10px auto;
+        font-size: 2rem;
+        border: 5px solid v.$color-accent;
+    }
+    @include v.breakpoint(tablet){
+
+    }
+    @include v.breakpoint(pc) {
+        .c-button {
+            font-size: 3.2rem;
+        }
+    }
+}
