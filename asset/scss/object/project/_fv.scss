@@ -1,70 +1,104 @@
-@use "./../../foundation/variable" as v;
+@use "./../../foundation/variable"as v;
+@use "./../../foundation/mixin"as m;
 
 .p-fv {
-    background-color: v.$color-main;
-    color: v.$color-base;
+    color: v.$color-black;
+    width: 100%;
+
+    &__back {
+        height: 220px;
+        background: transparent url(/RaiseTech/asset/img/RT_imege07.png) no-repeat center center;
+        background-position: center 0;
+        background-size: inherit;
+        overflow: hidden;
+        position: relative;
+        background-attachment: fixed;
+
+        @include m.md {
+            height: 720px;
+        }
+
+    }
+
+    &__image1 {
+        height: 320px;
+        background: url(/RaiseTech/asset/img/RT_imege09.png) no-repeat center center;
+        background-position: center 30px;
+        background-size: cover;
+        overflow: hidden;
+
+        @include m.md {
+            height: 800px;
+            background-position: center -5px;
+        }
+
+    }
+
+    &__image2 {
+        height: 320px;
+        background: url(/RaiseTech/asset/img/RT_imege08.png) no-repeat center center;
+        background-size: cover;
+        background-position: center 20px;
+        overflow: hidden;
+
+        @include m.md {
+            height: 800px;
+            background-position: center -5px;
+        }
+
+    }
 
     &__content {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
-        gap: 18px;
-        padding: 40px 0;
-        max-width: 100%;
-        font-weight: bold;
 
-        figcaption {
-            flex: 2;
+        @include m.md {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translate(-210px, 0);
+            width: 420px;
+            background-color: v.$color-base;
+            border-radius: 10px;
+            padding: 43px 40px 30px 40px;
         }
-        h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
-            margin-bottom: 40px;
-            .text-100 {
-                font-size: 5rem;
-            }
-            .text-96 {
-                font-size: 4.8rem;
-            }
-            .text-80 {
-                font-size: 4rem;
-            }
-        }
+
+
         p {
-            font-size: 2.2rem;
-        }
-        img {
-            flex: 1;
-            width: 250px;
-            box-shadow: -6px 6px 10px -2px #555, 0 0 3px #555;
-            border-radius: 3px;
-        }
-    }
-    @include v.breakpoint(tablet) {
-    }
-    @include v.breakpoint(pc) {
-        &__content {
-            flex-direction: row;
-            padding: 60px 0;
-            figcaption {
-                flex: 2;
-            }
-            h1 {
-                font-size: 5.6rem;
-                .text-100 {
-                    font-size: 10rem;
-                }
-                .text-96 {
-                    font-size: 9.6rem;
-                }
-                .text-80 {
-                    font-size: 8rem;
-                }
-            }
-            p {
-                font-size: 2.4rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 1em 0;
+            text-align: center;
+
+            @include m.md {
+                margin: 1.5em 0;
+                font-size: 1.6rem;
             }
         }
     }
+
+    &__logo {
+        display: none;
+
+        @include m.md {
+            display: block;
+            width: 280px;
+            height: auto;
+        }
+    }
+
+    &__button a {
+        padding: 12px 18px;
+        font-weight: bold;
+        font-size: 1.6rem;
+        background-color: v.$color-blueHover;
+
+        @include m.md {
+            font-size: 1.8rem;
+            padding: 18px 37px;
+        }
+
+    }
+
 }

@@ -6,41 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- サイトのタイトル -->
-    <title>LPをつくって学ぶSass x FROCSS</title>
+    <title>Hamburger</title>
     <!-- サイトの説明文 -->
-    <meta name="description" content="現場で頻出のSassの使い方からFLOCSSの記法までをLPをつくりながら学ぶ電子書籍！">
-    <!-- サイトの製作者 -->
-    <meta name="author" content="@yurukei20">
-    <!-- サイトのＵＲＬ -->
-    <meta rel="canonical" href="https://traveler20.github.io/sass-flocss-tutorial/">
-    <!-- サイトを共有した際に表示される画像URL -->
-    <meta property="og:image" content="https://traveler20.github.io/sass-flocss-tutorial/asset/img/ogp.webp" />
-    <!-- サイトの種類 -->
-    <meta property="og:type" content="website" />
-    <!-- Twitterで表示させたときの見え方 -->
-    <meta name="twitter:card" content="large" />
-    <!-- Twitterのユーザー名 -->
-    <meta name="twitter:site" content="@yurukei20" />
-    <!-- サイトの言語情報 -->
-    <meta property="og:locale" content="ja_JP" />
+    <meta name="description"
+      content="ハンバーガーを売りにしたオシャレなカフェデモサイト">
     <!-- サイトのアイコン -->
-    <link rel="icon" type="image/x-icon" href="./asset/img/favicon.ico" />
+    <link rel="shortcut icon" href="#"
+      type="image/x-icon" />
     <!-- reset.css destyle -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
     <link rel="stylesheet" href="./asset/css/style.min.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"/>
 
   </head>
 
   <body>
     <!-- .l-header -->
     <header class="l-header">
-      <div class="c-inner">
-        <div class="l-header__content">
-          <a href="" class="l-header__logo"><img src="./asset/img/header-logo.svg" alt=""></a>
-          <a href="https://zenn.dev/yurukei20/books/10e7322a762178" class="c-button">Zennを読む</a>
-        </div>
+      <div class="l-header__title c-title">
+        <a href="#">
+          <img src="./asset/img/RT_imege06.svg" alt="">
+          <h1>最速で<strong>「稼げる」</strong>プロになる<br>エンジニアリングスクール</h1>
+        </a>
+
       </div>
+      <nav class="l-header__menu c-gnav">
+        <ul class="c-gnav__menu">
+          <li class="c-gnav__mainmenu">
+            <a href="">はじめての方へ</a>
+            <ul class="c-gnav__submenu">
+              <li>
+                <a href="">マンガでわかるRaiseTech</a>
+              </li>
+              <li>
+                <a href="">サポート体制</a>
+              </li>
+              <li>
+                <a href="">トライアル受講</a>
+              </li>
+              <li>
+                <a href="">就職・転職支援制度</a>
+              </li>
+              <li>
+                <a href="">ご利用の流れ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="c-gnav__mainmenu">
+            <a tabindex="-1">コース案内</a>
+            <ul class="c-gnav__submenu">
+              <li>
+                <a href="">マーケテイングコース</a>
+              </li>
+              <li>
+                <a href="">デザインコース</a>
+              </li>
+              <li>
+                <a href="">WordPress副業コース</a>
+              </li>
+              <li>
+                <a href="">AWSフルコース</a>
+              </li>
+              <li>
+                <a href="">AWS自動化コース</a>
+              </li>
+              <li>
+                <a href="">Javaフルコース</a>
+              </li>
+              <li>
+                <a href="">Javaフレームワークコース</a>
+              </li>
+            </ul>
+          </li>
+          <li class="c-gnav__mainmenu">
+            <a href="">講師紹介</a>
+          </li>
+          <li class="c-gnav__mainmenu">
+            <a tabindex="-1">卒業生の声・実績</a>
+            <ul class="c-gnav__submenu">
+              <li>
+                <a href="">卒業生の声</a>
+              </li>
+              <li>
+                <a href="">転職・案件実績</a>
+              </li>
+            </ul>
+          </li>
+          <li class="c-gnav__mainmenu">
+            <a tabindex="-1">メディア</a>
+            <ul class="c-gnav__submenu">
+              <li>
+                <a href="">動画一覧</a>
+              </li>
+              <li>
+                <a href="">掲載記事一覧</a>
+              </li>
+            </ul>
+          </li>
+          <li class="c-gnav__mainmenu">
+            <a href="">サポート</a>
+            <ul class="c-gnav__submenu">
+              <li>
+                <a href="">よくあるご質問</a>
+              </li>
+              <li>
+                <a href="">お問い合わせ</a>
+              </li>
+            </ul>
+          </li>
+          <li class="c-gnav__mainmenu">
+            <a href="" class="c-gnav__cv">受講お申し込み</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="c-button--toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
     <!-- .l-header -->
 
@@ -48,144 +130,95 @@
     <main>
       <!-- .p-fv -->
       <section class="p-fv">
-        <div class="c-inner">
-          <figure class="p-fv__content">
-            <figcaption>
-              <h1>
-                <span class="u-inline-block">
-                  <span class="text-100">LP</span>をつくって学ぶ
-                </span>
-                <span class="u-inline-block">
-                  <span class="text-96">Sass</span>
-                  <span class="text-80">×</span>
-                  <span class="text-96">FROCSS</span>
-                </span>
-              </h1>
-                <p>
-                  現場で頻出のSassの使い方からFROCSSの記法までを<br>LPをつくりながら学ぶ電子書籍！
-                </p>
-              
-            </figcaption>
-            <img src="./asset/img/fv-book.webp" alt="">
-          </figure>
+
+        <div class="p-fv__back">
+          <div class="p-fv__image1">
+            <div class="p-fv__image2"></div>
+          </div>
         </div>
+        <div class="p-fv__content">
+          <img src="./asset/img/RT_imege06.svg" alt="" class="p-fv__logo">
+          <p>はじめまして。RaiseTech（レイズテック）は<br>
+            最速で「稼げる」エンジニアになるための、<br>
+            実践的なWebエンジニアリングスクールです
+          </p>
+          <button class="p-fv__button c-button">
+            <a href="">マンガでわかるRaiseTech</a>
+          </button>
+        </div>
+
       </section>
       <!-- .p-fv -->
 
-      <!-- .p-theme -->
-      <section class="p-theme c-section">
-        <div class="c-inner">
-          <h2 class="c-section__title">
-            <span class="u-inline-block">コーディング学習で</span>
-            <span class="u-inline-block">よくある相談</span>
-          </h2>
-          <figure class="p-theme__content">
-            <img src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
-            <figcaption>
-              <ul class="p-theme__lists">
-                <li>HTML・CSSは勉強したけど、現場のスキルに合うか不安…。</li>
-                <li>現場でSassを使ってるみたいだけど全然わからない…。</li>
-                <li>CSSのクラス名が整理できずCSSの修正案件に時間がかかる…。</li>
-                <li>もっと整理されたCSSを書きたい！</li>
-                <li>FLOCSSの具体的な書き方を知りたい！</li>
-              </ul>
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-      <!-- .p-theme -->
+      <!-- .p-recommendation -->
+      <section class="p-recommendation">
 
-      <!-- .p-solution -->
-      <section class="p-solution c-section">
-        <div class="c-inner">
-          <h2 class="c-section__title">
-            書籍『LPをつくって学ぶSass×FLOCSS』なら
-          </h2>
-          <ul class="p-solution__lists">
-            <li class="p-solution__list">
-              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
-              <p>Sass×FLOCSSを<br>実際に書きながら学べる</p>
-            </li>
-            <li class="p-solution__list">
-              <img src="https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
-              <p>現場レベルのHTML/CSSの<br>技術を体感できる</p>
-            </li>
-            <li class="p-solution__list">
-              <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80" alt="">
-              <p>つくったLPは<br>ポートフォリオに掲載OK！</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- .p-solution -->
-
-      <!-- .p-faq -->
-      <section class="p-faq c-section">
-        <div class="c-inner">
-          <h2 class="c-section__title">よくある質問</h2>
-          <div class="p-faq__content">
-            <details class="p-faq__details">
-              <summary class="p-faq__summary">お金はかかりますか？</summary>
-              <div class="p-faq__answer">
-                かかりません。Zennにて0円で出版します。
-              </div>
-            </details>
-            <details class="p-faq__details">
-              <summary class="p-faq__summary">
-                作成したLPをTwitterで共有しても大丈夫でしょうか？
-              </summary>
-              <div class="p-faq__answer">
-                もちろん、大丈夫です！<br />
-                ZennのURLや＠yurukei20をメンションしてもらえるとリツイートします！
-              </div>
-            </details>
-            <details class="p-faq__details">
-              <summary class="p-faq__summary">
-                作成したLPはポートフォリオにしていいですか？
-              </summary>
-              <div class="p-faq__answer">
-                はい！もちろんです。<br />
-                もし可能であれば、書籍の題名やZennのURLなどを一緒に記載していただけると幸いです。
-              </div>
-            </details>
-            <details class="p-faq__details">
-              <summary class="p-faq__summary">試し読みはできますか？</summary>
-              <div class="p-faq__answer">
-                全編無料なので試し読みもなにも全部無料で読めますよ！
-              </div>
-            </details>
+        <div class="p-recommendation__content">
+          <div class="p-recommendation__title">
+            <p class="p-recommendation__icon">
+              <i class="fal fa-dumbbell fa-fw"></i>
+            </p>
+            <p>
+              現場主義
+            </p>
           </div>
+          <p class="p-recommendation__body">
+            「プログラム」だけでは稼げない！ 現場で求められる「技術」のみ教えます。
+          </p>
         </div>
-      </section>
-      <!-- .p-faq -->
-
-      <!-- .p-cv -->
-      <section class="p-cv c-section">
-        <div class="c-inner">
-          <h2 class="c-section__title">まずは試し読みから！</h2>
-          <div class="p-cv__content">
-            <a href="https://zenn.dev/yurukei20/books/10e7322a762178" class="c-button">Zennを読む</a>
+        <div class="p-recommendation__content">
+          <div class="p-recommendation__title">
+            <p class="p-recommendation__icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </p>
+            <p>
+              現役講師
+            </p>
           </div>
+          <p class="p-recommendation__body">
+            「今、求められている技術」をリアルタイムに教えてくれる、現役の技術者だけが講師です。
+          </p>
+        </div>
+        <div class="p-recommendation__content">
+          <div class="p-recommendation__title">
+            <p class="p-recommendation__icon">
+              <i class="fal fa-life-ring fa-fw"></i>
+            </p>
+            <p>
+              徹底サポート
+            </p>
+          </div>
+          <p class="p-recommendation__body">
+            期間中の質疑応答無制限！ 個別進捗管理！ 挫折させないサポートを徹底します。
+          </p>
         </div>
       </section>
-      <!-- .p-cv -->
+      <!-- .p-recommendation -->
+
+
     </main>
     <!-- main -->
 
     <!-- l-footer -->
-    <footer class="l-footer">
-      <div class="c-inner">
-        <div class="l-footer__content">
-          <ul class="l-footer__lists">
-            <li><a href="https://yurukei-career.com/">運営会社</a></li>
-            <li><a href="https://yurukei-career.com/toiawase-form/">お問い合わせ</a></li>
-          </ul>
-          <small class="l-footer__copyright">&copy;yurukei20</small>
-        </div>
-      </div>
-    </footer>
+
     <!-- .l-footer -->
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+      $(function () {
+        $(".c-button--toggle").on("click", function () {
+          $(".c-gnav__mainmenu").toggleClass("open");
+          $(this).toggleClass("open");
+          $(window).resize(function () {  //リサイズされたときの処理
+            $(".open").removeClass("open");
+          });
+        });
+      });
+    </script>
+    <!-- jQuery -->
   </body>
 
 </html>

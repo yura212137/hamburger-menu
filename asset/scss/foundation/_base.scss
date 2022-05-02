@@ -18,10 +18,12 @@ html {
 body {
     color: #333333;
     font-size: 1.6rem;
-    font-family: "Helvetica Neue",Arial, "Hiragino Kaku Gothic ProN","Hiragino Sans", Meiryo, sans-serif;
-    min-width: 350px;
+    font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;;
     width: 100%;
     overflow-x: hidden;
+    margin: 0 auto;
+    line-height: 1.7;
+    height: 200vh;
 }
 
 img,
@@ -34,8 +36,8 @@ object {
 }
 
 a {
-    color: #0066c0;
     text-decoration: underline;
+    text-decoration: none;
     transition: 0.4s;
     &:hover {
         text-decoration: none;
@@ -52,15 +54,3 @@ a:hover img {
     transition: all 0.3s;
 }
 
-@mixin breakpoint($point) {
-    @if $point == tablet {
-        @media (min-width: 640px) {
-            @content;
-        }
-    }
-    @if $point ==pc {
-        @media (min-width: 750px) {
-            @content;
-        }
-    }
-}
