@@ -1,0 +1,15 @@
+@use "./../foundation/variable"as v;
+@use "./../foundation/mixin"as m;
+
+@include m.lg {
+  .l-main {
+    display: flex;
+
+    &__headermain {
+      width: 100%;
+    }
+  }
+}
+main {
+  height: 100%;
+}
