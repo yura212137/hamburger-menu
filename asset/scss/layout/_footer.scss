@@ -1,39 +1,3 @@
 @use "./../foundation/variable" as v;
 @use "./../foundation/mixin" as m;
 
-.l-footer {
-    background-color: v.$color-base;
-    color: v.$color-black;
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: v.$color-base;
-        color: v.$color-base;
-        @include m.md {
-            flex-direction: row;
-        }
-    }
-    &__logo {
-        width: 120px;
-        margin: 50px;
-        
-        }
-    }
-    small {
-        text-align: center;
-        letter-spacing: 1px;
-        width: 80%;
-        font-size: 0.8rem;
-        margin-bottom: 50px;
-        line-height: 25px;
-        @include m.md {
-            margin-bottom: 0;
-            text-align: start;
-            width: auto;
-        }
-    
-
-}

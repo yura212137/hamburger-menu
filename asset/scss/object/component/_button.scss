@@ -2,80 +2,22 @@
 @use "./../../foundation/mixin"as m;
 
 .c-button {
-    a {
-        display: block;
-        font-size: 1.4rem;
-        border-radius: 4px;
-        color: v.$color-base;
-        border: solid 1px v.$color-bluebtn;
-        background-color: v.$color-bluebtn;
-        text-decoration: none;
-        text-align: center;
-        transition: .5s;
-
-        &:hover {
-            border: solid 1px v.$color-blueHover;
-            background-color: v.$color-blueHover;
-        }
-    }
-}
-.c-button--toggle {
-    display: inline-block;
-    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    width: 80px;
     height: 50px;
-    width: 50px;
-
-    @include m.lg {
-        display: none;
-    }
-
-    span {
-        position: absolute;
-        left: 10px;
-        height: 2px;
-        width: 30px;
-        background-color: v.$color-blue;
-        color: v.$color-blue;
-        display: inline-block;
-        transition: 0.5s;
-
-        &:nth-of-type(1) {
-            bottom: 35px;
-            transition: 0.5s;
-        }
-
-        &:nth-of-type(2) {
-            bottom: 25px;
-            transition: 0.5s;
-        }
-
-        &:nth-of-type(3) {
-            bottom: 15px;
-            transition: 0.5s;
-        }
-
-    }
-
+    display: block;
+    
 }
-
-.c-button--toggle.open {
-    background-color: v.$color-blue;
-
-    span {
-        &:nth-of-type(1) {
-            bottom: 25px;
-            background-color: v.$color-base;
-            transform: rotate(-45deg);
-        }
-
-        &:nth-of-type(2) {
-            opacity: 0;
-        }
-
-        &:nth-of-type(3) {
-            bottom: 25px;
-            background-color: v.$color-base;
-            transform: rotate(45deg);
-        }
+@include m.md {
+    .c-button {
+        font-size: 34px;
+        width: 130px;
+        height: 90px;
+    }
+}
+@include m.lg {
+    .c-button {
+        display: none;
     }
 }
