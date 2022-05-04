@@ -4,6 +4,7 @@
 @include m.lg {
   .l-main {
     display: flex;
+    height: 100%;
 
     &__headermain {
       width: 100%;

@@ -34,28 +34,13 @@
     justify-content: space-between;
   }
 
-  &__title {
-    font-size: 4.1rem;
-    font-weight: bold;
-    color: v.$color-white_takeout;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -15px;
-      width: 45px;
-      height: 2px;
-      background-color: v.$color-white;
-    }
-  }
+  
 
   &__content {
     margin-top: 250px;
   }
 
-  &__discription {
+  &__description {
     background-color: v.$color-white;
     opacity: 0.8;
     margin-top: 20px;
@@ -82,7 +67,7 @@
     justify-content: center;
     padding: 30px;
 
-    &__discription {
+    &__description {
 
       h3 {
         font-size: 2.4rem;
@@ -98,7 +83,7 @@
 @include m.lg {
   .p-model {
 
-    &__discription {
+    &__description {
       p {
         font-size: 1.6rem;
       }
