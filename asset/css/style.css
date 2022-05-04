@@ -25,6 +25,10 @@ body {
   min-height: 100vh;
 }
 
+body.open {
+  overflow: hidden;
+}
+
 img,
 video,
 object {
