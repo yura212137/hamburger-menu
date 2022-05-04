@@ -61,10 +61,6 @@ a:hover img {
     width: 100%;
   }
 }
-main {
-  height: 100%;
-}
-
 .l-header {
   width: 100%;
   height: 220px;
@@ -460,7 +456,6 @@ input[type=checkbox] {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
 }
 .p-access__description {
   position: relative;
@@ -494,6 +489,9 @@ input[type=checkbox] {
 @media (min-width: 600px) {
   .p-access {
     height: 415px;
+  }
+  .p-access__description {
+    height: 100%;
   }
 }
 @media (min-width: 1250px) {

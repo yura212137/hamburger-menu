@@ -20,8 +20,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden;
-    
   }
   
   &__description {
@@ -52,14 +50,16 @@
     position: relative;
     z-index: 50;
     line-height: 2;
-
-
   }
   
 }
 @include m.md {
   .p-access {
     height: 415px;
+    &__description {
+      height: 100%;
+      
+    }
   }
 }
 @include m.lg {
