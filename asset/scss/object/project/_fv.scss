@@ -16,24 +16,22 @@
         color: v.$color-white;
         line-height: 285px;
         padding-left: 25px;
-
     }
 }
+
 @include m.lg {
     .p-fv {
-        
+
         height: 530px;
         margin-top: 0;
         background-image: url(/asset/img/mainvisual-pc@2x.jpg);
 
-    
         h2 {
             font-size: 40px;
             font-weight: bold;
             color: v.$color-white;
             line-height: 530px;
             padding-left: 40px;
-    
         }
     }
 }

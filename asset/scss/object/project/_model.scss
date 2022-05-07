@@ -34,8 +34,6 @@
     justify-content: space-between;
   }
 
-  
-
   &__content {
     margin-top: 250px;
   }
@@ -82,7 +80,6 @@
 
 @include m.lg {
   .p-model {
-
     &__description {
       p {
         font-size: 1.6rem;

@@ -27,11 +27,21 @@
 @include m.md {
   .c-searchform {
     &__input {
-      width: 396px;
+      width: 47.5vw;
     }
     &__button {
       width: 136px;
-      
+    }
+  }
+}
+@include m.lg {
+  .c-searchform {
+    &__input {
+      width: 22vw;
+    }
+    &__button {
+      max-width: 136px;
+      width: 8vw;
     }
   }
 }

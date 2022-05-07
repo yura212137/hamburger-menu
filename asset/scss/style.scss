@@ -23,7 +23,10 @@
   @use "./object/component/searchform";
   @use "./object/component/button";
   @use "./object/component/title";
-  @use "./object/component/gnav";
+  @use "./object/component/inner";
+  @use "./object/component/detailsBtn";
+  @use "./object/component/page";
+
 
 /*-------------------
   * project
@@ -31,6 +34,8 @@
   @use "./object/project/fv";
   @use "./object/project/model";
   @use "./object/project/access";
+  @use "./object/project/archiveTop";
+  @use "./object/project/menu";
 
 /*-------------------
   * utilty
