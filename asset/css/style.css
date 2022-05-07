@@ -671,7 +671,7 @@ input[type=checkbox] {
   position: absolute;
   z-index: 50;
 }
-.p-archiveTop__title h2 {
+.p-archiveTop__title h1 {
   font-size: 3.6rem;
   font-weight: bold;
   color: #ffffff;
@@ -682,7 +682,7 @@ input[type=checkbox] {
   font-weight: bold;
   color: #ffffff;
 }
-.p-archiveTop__text h2 {
+.p-archiveTop__text h1 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #3C2A10;
@@ -701,7 +701,7 @@ input[type=checkbox] {
     justify-content: flex-start;
     align-items: center;
   }
-  .p-archiveTop__title h2 {
+  .p-archiveTop__title h1 {
     font-size: 6rem;
     margin-right: 20px;
   }
@@ -770,6 +770,79 @@ input[type=checkbox] {
   }
   .p-menu__text p {
     margin-right: 0;
+  }
+}
+.p-searchTop {
+  width: 100%;
+  height: 283px;
+  margin-top: 220px;
+  background-color: #000000;
+  position: relative;
+}
+.p-searchTop__img {
+  background-image: url(/asset/img/page-title_arcive@2x.jpg);
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.p-searchTop__title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10vw;
+  position: absolute;
+  z-index: 50;
+}
+.p-searchTop__title h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+.p-searchTop__title p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.p-searchTop__text h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #3C2A10;
+  margin: 30px 0;
+}
+.p-searchTop__text p {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #3C2A10;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+  .p-searchTop__title {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .p-searchTop__title h1 {
+    font-size: 6rem;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-searchTop {
+    height: 239px;
+    margin-top: auto;
+  }
+  .p-searchTop__title {
+    padding-left: 4.5vw;
   }
 }
 /*--------------------------------------*
