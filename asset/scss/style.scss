@@ -37,6 +37,14 @@
   @use "./object/project/archiveTop";
   @use "./object/project/menu";
   @use "./object/project/searchTop";
+  @use "./object/project/singleTop";
+  @use "./object/project/content";
+  @use "./object/project/list";
+  @use "./object/project/code";
+  @use "./object/project/table";
+  @use "./object/project/other";
+  @use "./object/project/pageTop";
+
 
 /*-------------------
   * utilty
