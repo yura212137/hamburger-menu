@@ -1,32 +1,5 @@
-@use "./../foundation/variable" as v;
-@use "./../foundation/mixin" as m;
-
-.menu-cateogrymenu-container {
-  margin-top: 212px;
-  margin-left: 46px;
-}
-
-.menu-category>a {
-  display: block;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.sub-menu {
-  margin-top: 40px;
-  margin-bottom: 40px;
-
-  .menu-item {
-    margin: 20px;
-    margin-right: 0;
-
-    &>a {
-      display: block;
-      font-size: 20px;
-    }
-  }
-}
-
+@use "./../foundation/variable"as v;
+@use "./../foundation/mixin"as m;
 
 .l-aside {
   width: 367px;
@@ -50,7 +23,6 @@
   &__menu {
     display: none;
   }
-
 
   &>ul {
     margin: 40px;
@@ -111,7 +83,6 @@ input[type="checkbox"]:checked~.back {
 
     &__menu {
       display: block;
-
       &>a {
         display: block;
         font-size: 3.4rem;
@@ -121,14 +92,13 @@ input[type="checkbox"]:checked~.back {
       }
 
     }
-
+    &>ul {
+      &:first-of-type {
+        margin-top: 80px;
+      }
+    }
   }
-
   input[type="checkbox"]:checked~.back {
     display: none;
-  }
-
-  .menu-cateogrymenu-container {
-    margin-top: 85px;
   }
 }

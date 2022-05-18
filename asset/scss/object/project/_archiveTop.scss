@@ -4,6 +4,7 @@
 .p-archiveTop {
   width: 100%;
   height: 283px;
+  margin-top: 220px;
   background-color: v.$color-back;
   position: relative;
 
@@ -77,6 +78,7 @@
 @include m.lg {
   .p-archiveTop {
     height: 239px;
+    margin-top: auto;
     &__title {
       padding-left: 4.5vw;
     }
