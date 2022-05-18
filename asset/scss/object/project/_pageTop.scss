@@ -2,6 +2,7 @@
 @use "./../../foundation/mixin"as m;
 
 .p-pageTop {
+<<<<<<< HEAD
   // width: 100%;
   // height: 225px;
   // margin-top: 220px;
@@ -12,6 +13,15 @@
   &__title {
     width: 100%;
     position: relative;
+=======
+  width: 100%;
+  height: 225px;
+  margin-top: 220px;
+  background-image: url(../img/page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+>>>>>>> d5fcfe78a0fbe005f66859ce0b5bdb17004f43ff
 
     img {
       width: 100%;
